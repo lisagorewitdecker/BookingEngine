@@ -1,0 +1,31 @@
+- name: .Net Outdated
+  # You may pin to the exact commit or the version.
+  # uses: gavanlamb/.net-outdated@b2cdbd0203897eaa8f1d7a97c586ea1ba500deef
+  uses: gavanlamb/.net-outdated@v1.0.0
+  with:
+    # A flag to indicate whether to add a comment to the associated PR with a report of the outdated packages. If this is enabled and the action is executed for a non-pull-request build then the comment will not be added.
+    add-pr-comment: # optional
+    # A unique suffix for the pull-request comment for the current run.
+    pr-comment-name: # optional
+    # A flag to indicate whether to add a check run, to the action, containing a report of the outdated packages.
+    add-check-run: # optional
+    # A flag to indicate whether the check run should fail if there are any direct dependencies that are out of date. In order for this to work the check run needs to be enabled by setting `add-check-run` to be true.
+    fail-check-run-if-contains-outdated: # optional
+    # A unique name for the check run tab.
+    check-run-name: # optional
+    # A flag to indicate whether to include transitive and top-level packages.
+    include-transitive-dependencies: # optional
+    # A flag to indicate whether to include prerelease packages as the target.
+    include-prerelease-dependencies: # optional
+    # A flag to indicate whether to consider only the packages with a matching major version number when searching for newer packages.
+    include-highest-minor-only: # optional
+    # A flag to indicate whether to consider only the packages with a matching major and minor version numbers when searching for newer packages.
+    include-highest-patch-only: # optional
+    # The NuGet sources to use when searching for newer packages. To specify more than one use a comma separated value.
+    nuget-sources: # optional
+    # The path to the NuGet config file to use.
+    nuget-config-file-path: # optional
+    # The framework or frameworks to run the command for. To specify more than one use a comma separated value.
+    frameworks: # optional
+    # The project or solution file to target. If a file is not specified, the command will search the current directory for one.
+    target: # optional

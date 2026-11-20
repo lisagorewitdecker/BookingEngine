@@ -155,7 +155,7 @@ spec:
         - configMapRef:
             name: booking-engine-config
         env:
-        - name: ConnectionStrings__DefaultConnection
+        - name: ConnectionStrings__bookingdb
           valueFrom:
             secretKeyRef:
               name: booking-engine-db-secret

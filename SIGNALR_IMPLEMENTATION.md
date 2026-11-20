@@ -217,7 +217,7 @@ dotnet run
 
 ### JavaScript/TypeScript Example
 ```typescript
-import * as signalR from "@aspnetcore/signalr";
+import * as signalR from "@microsoft/signalr";
 
 const connection = new signalR.HubConnectionBuilder()
   .withUrl("https://localhost:7046/hubs/bookings")

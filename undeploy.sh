@@ -4,7 +4,7 @@ set -e
 echo "🧹 Cleaning up BookingEngine Kubernetes deployment..."
 
 echo "⏳ Scaling down deployment..."
-kubectl scale deployment/booking-engine -n booking-engine --replicas=0
+kubectl scale deployment/booking-engine -n booking-engine --replicas=0 || true
 
 echo "🗑️  Deleting resources..."
 kubectl delete -f k8s-ingress-hpa.yaml --namespace booking-engine || true

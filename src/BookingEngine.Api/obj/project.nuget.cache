@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "4kYAay0h76A=",
   "success": true,
-  "projectFilePath": "/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.Api/BookingEngine.Api.csproj",
+  "projectFilePath": "src/BookingEngine.Api/BookingEngine.Api.csproj",
   "expectedPackageFiles": [
     "/Users/lmgorewit/.nuget/packages/aspire.npgsql.entityframeworkcore.postgresql/13.6.5/aspire.npgsql.entityframeworkcore.postgresql.13.6.5.nupkg.sha512",
     "/Users/lmgorewit/.nuget/packages/efcore.namingconventions/10.0.1/efcore.namingconventions.10.0.1.nupkg.sha512",

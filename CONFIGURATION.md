@@ -425,7 +425,7 @@ kubectl logs -n booking-engine postgres-0
 ## Configuration Files Location
 
 ```
-/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/
+<repository-root>/
 
 ├── k8s-deployment.yaml          # Main configuration
 ├── k8s-ingress-hpa.yaml         # Ingress and autoscaling

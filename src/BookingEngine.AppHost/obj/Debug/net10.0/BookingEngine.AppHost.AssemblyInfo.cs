@@ -11,17 +11,7 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("booking-engine-apphost")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("/Users/lmgorewit/.nuget/packages/aspire.hosting.orchestration.osx-arm64/13.6.5/to" +
-    "ols/dcp"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("/Users/lmgorewit/.nuget/packages/aspire.hosting.orchestration.osx-arm64/13.6.5/to" +
-    "ols/ext/"))]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", ("/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagore" +
-    "witdecker/BookingEngine/src/BookingEngine.AppHost"))]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "BookingEngine.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("/Users/lmgorewit/.nuget/packages/aspire.dashboard.sdk.osx-arm64/13.6.5/tools/Aspi" +
-    "re.Dashboard"))]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", ("/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagore" +
-    "witdecker/BookingEngine/src/BookingEngine.AppHost/obj/"))]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookingEngine.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

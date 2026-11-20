@@ -16,7 +16,7 @@ Your BookingEngine application is ready for Kubernetes deployment to a Developme
    - Namespace: `booking-engine`
    - ConfigMap: Application configuration
    - Secrets: Database credentials (changeable)
-   - PostgreSQL StatefulSet: Database with persistent storage setup
+   - PostgreSQL StatefulSet: Database with ephemeral storage (`emptyDir`)
    - Deployment: 2 replicas of BookingEngine API with:
      - Resource requests: 250m CPU, 512Mi memory
      - Resource limits: 500m CPU, 1Gi memory

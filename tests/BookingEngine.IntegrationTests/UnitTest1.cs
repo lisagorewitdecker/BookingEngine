@@ -2,7 +2,7 @@ namespace BookingEngine.IntegrationTests;
 
 public class UnitTest1
 {
-    [Fact]
+    [Xunit.Fact]
     public void Test1()
     {
     }

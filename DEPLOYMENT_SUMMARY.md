@@ -67,7 +67,7 @@ docker --version
 
 #### Automated Deployment (Recommended)
 ```bash
-cd /Users/lmgorewit/Documents/Documents\ -\ Lisa\ M\ Gorewit-Decker\ MacBook\ Pro/lisagorewitdecker/BookingEngine
+cd <repo-root>
 
 # Standard deployment to localhost:5000 registry
 ./deploy.sh

@@ -1,0 +1,13 @@
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/bin/Debug/net11.0/BookingEngine.ServiceDefaults.deps.json
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/bin/Debug/net11.0/BookingEngine.ServiceDefaults.dll
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/bin/Debug/net11.0/BookingEngine.ServiceDefaults.pdb
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingEngine.ServiceDefaults.csproj.AssemblyReference.cache
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingEngine.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingEngine.ServiceDefaults.AssemblyInfoInputs.cache
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingEngine.ServiceDefaults.AssemblyInfo.cs
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingEngine.ServiceDefaults.csproj.CoreCompileInputs.cache
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingEngine.ServiceDefaults.dll
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/refint/BookingEngine.ServiceDefaults.dll
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingEngine.ServiceDefaults.pdb
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/ref/BookingEngine.ServiceDefaults.dll
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.ServiceDefaults/obj/Debug/net11.0/BookingE.92F097FF.Up2Date

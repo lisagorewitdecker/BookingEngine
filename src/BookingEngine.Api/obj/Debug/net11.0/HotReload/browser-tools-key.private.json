@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "algorithm": "RSA-OAEP-SHA256",
+  "format": "RSAParameters",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwyrlQRMl7sLE\u002BAntLkXMbzHNZPuOP7\u002Bu1bfiXuvcpQmrwonM3ClpKfQjUCJ/18AxirCGyQ5glrAhu0IeBKYigHFN/PB0c7lXcUrLrYkLQtnBjWUH\u002BtoBqmq\u002BblzKh20ear3i\u002BV/owKJsVywBO2BOL9oK\u002BA3t3k0hCY1PC523dOZ3fYM5Idj5m709yMXY6fnwbldTQ7M57jZtqMmKOE0A4J7bWDgQ47teAL1N9rnavzF19h9BUEAf83oyaTt2Q1bqZbAHlVmpKNF/Ye8XjPNFcbrer5I96wrSh6gscBA10FT0lwLADwbh65S4\u002B7taBfryDxQ9N/0tKfukPEiAXSMxawIDAQAB",
+  "parameters": {
+    "modulus": "wyrlQRMl7sLE\u002BAntLkXMbzHNZPuOP7\u002Bu1bfiXuvcpQmrwonM3ClpKfQjUCJ/18AxirCGyQ5glrAhu0IeBKYigHFN/PB0c7lXcUrLrYkLQtnBjWUH\u002BtoBqmq\u002BblzKh20ear3i\u002BV/owKJsVywBO2BOL9oK\u002BA3t3k0hCY1PC523dOZ3fYM5Idj5m709yMXY6fnwbldTQ7M57jZtqMmKOE0A4J7bWDgQ47teAL1N9rnavzF19h9BUEAf83oyaTt2Q1bqZbAHlVmpKNF/Ye8XjPNFcbrer5I96wrSh6gscBA10FT0lwLADwbh65S4\u002B7taBfryDxQ9N/0tKfukPEiAXSMxaw==",
+    "exponent": "AQAB",
+    "d": "",
+    "p": "",
+    "q": "",
+    "dp": "",
+    "dq": "",
+    "inverseQ": ""
+  }
+}

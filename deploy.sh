@@ -8,7 +8,7 @@ KUBECONFIG="${KUBECONFIG:-$HOME/.kube/config}"
 
 echo "🔨 Building BookingEngine Docker image..."
 docker build -t "${IMAGE_NAME}:${IMAGE_TAG}" .
-docker build -t "${IMAGE_NAME}:latest" .
+docker tag "${IMAGE_NAME}:${IMAGE_TAG}" "${IMAGE_NAME}:latest"
 
 echo "📦 Pushing image to registry..."
 docker push "${IMAGE_NAME}:${IMAGE_TAG}"

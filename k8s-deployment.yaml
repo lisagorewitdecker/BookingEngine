@@ -19,10 +19,10 @@ metadata:
   namespace: booking-engine
 type: Opaque
 stringData:
-  connection-string: "Server=postgres-service;Port=5432;Database=booking_engine;User Id=booking_user;Password=booking_password;"
-  postgres-password: "booking_password"
-  postgres-user: "booking_user"
-  postgres-db: "booking_engine"
+  connection-string: "${BOOKING_ENGINE_DB_CONNECTION_STRING}"
+  postgres-password: "${BOOKING_ENGINE_DB_PASSWORD}"
+  postgres-user: "${BOOKING_ENGINE_DB_USER}"
+  postgres-db: "${BOOKING_ENGINE_DB_NAME}"
 ---
 apiVersion: v1
 kind: Service

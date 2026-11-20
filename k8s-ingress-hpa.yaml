@@ -1,0 +1,79 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: booking-engine-ingress
+  namespace: booking-engine
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  tls:
+  - hosts:
+    - booking-engine.local
+    secretName: booking-engine-tls
+  rules:
+  - host: booking-engine.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: booking-engine-service
+            port:
+              number: 80
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: booking-engine-pdb
+  namespace: booking-engine
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: booking-engine
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: booking-engine-hpa
+  namespace: booking-engine
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: booking-engine
+  minReplicas: 2
+  maxReplicas: 5
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 15
+    scaleUp:
+      stabilizationWindowSeconds: 0
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 15
+      - type: Pods
+        value: 2
+        periodSeconds: 60
+      selectPolicy: Max

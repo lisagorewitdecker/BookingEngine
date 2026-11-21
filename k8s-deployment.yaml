@@ -19,10 +19,10 @@ metadata:
   namespace: booking-engine
 type: Opaque
 stringData:
-  connection-string: "${BOOKING_ENGINE_DB_CONNECTION_STRING}"
-  postgres-password: "${BOOKING_ENGINE_DB_PASSWORD}"
-  postgres-user: "${BOOKING_ENGINE_DB_USER}"
-  postgres-db: "${BOOKING_ENGINE_DB_NAME}"
+  connection-string: "Server=postgres-service;Port=5432;Database=booking_engine;User Id=booking_user;Password=booking_password;"
+  postgres-password: "booking_password"
+  postgres-user: "booking_user"
+  postgres-db: "booking_engine"
 ---
 apiVersion: v1
 kind: Service
@@ -91,7 +91,7 @@ spec:
             command:
             - /bin/sh
             - -c
-            - pg_isready -U "$POSTGRES_USER"
+            - pg_isready -U booking_user
           initialDelaySeconds: 30
           periodSeconds: 10
       volumes:
@@ -155,7 +155,7 @@ spec:
         - configMapRef:
             name: booking-engine-config
         env:
-        - name: ConnectionStrings__bookingdb
+        - name: ConnectionStrings__DefaultConnection
           valueFrom:
             secretKeyRef:
               name: booking-engine-db-secret

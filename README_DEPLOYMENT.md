@@ -374,7 +374,7 @@ BookingEngine/
 ├── KUBERNETES_DEPLOYMENT.md       # Complete guide
 ├── DEPLOYMENT_CHECKLIST.md        # Verification steps
 ├── CONFIGURATION.md               # Settings reference
-└── README_DEPLOYMENT.md            # Package overview
+└── README.md                      # This file
 ```
 
 ---

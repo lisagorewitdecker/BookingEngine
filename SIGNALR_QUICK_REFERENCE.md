@@ -79,11 +79,11 @@ When a booking is created:
 ```json
 {
   "OutboxWorker": {
-    "ApiBaseUrl": "https://localhost:7046",
-    "HubPath": "/hubs/bookings",
-    "BroadcastMethod": "BookingUpdated",
-    "PollIntervalMilliseconds": 1000,
-    "BatchSize": 50
+    "ApiBaseUrl": "https://localhost:7046",        // API endpoint (overridden by AppHost)
+    "HubPath": "/hubs/bookings",                   // SignalR hub path
+    "BroadcastMethod": "BookingUpdated",           // Client method name
+    "PollIntervalMilliseconds": 1000,              // Poll delay when idle
+    "BatchSize": 50                                // Messages per batch
   }
 }
 ```

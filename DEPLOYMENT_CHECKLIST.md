@@ -123,7 +123,7 @@
 ### Health Checks
 - [ ] Liveness probe passing:
   ```bash
-  kubectl get pods -n booking-engine -o jsonpath='{.items[*].spec.containers[*].livenessProbe}' | jq .
+  kubectl get pods -n booking-engine -o jsonpath='{.items[*].status.containerStatuses[*].livenessProbe}' | jq .
   ```
 
 - [ ] Readiness probe passing:

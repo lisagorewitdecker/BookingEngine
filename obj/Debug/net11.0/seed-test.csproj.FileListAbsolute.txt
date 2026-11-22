@@ -1,0 +1,5 @@
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/obj/Debug/net11.0/seed-test.csproj.AssemblyReference.cache
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/obj/Debug/net11.0/seed-test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/obj/Debug/net11.0/seed-test.AssemblyInfoInputs.cache
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/obj/Debug/net11.0/seed-test.AssemblyInfo.cs
+/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/obj/Debug/net11.0/seed-test.csproj.CoreCompileInputs.cache

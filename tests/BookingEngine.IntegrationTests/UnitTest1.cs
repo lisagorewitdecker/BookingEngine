@@ -1,8 +1,8 @@
-namespace BookingEngine.IntegrationTests;
+﻿namespace BookingEngine.IntegrationTests;
 
 public class UnitTest1
 {
-    [Xunit.Fact]
+    [Fact]
     public void Test1()
     {
     }

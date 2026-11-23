@@ -158,10 +158,10 @@ await conn2.start();
 **Create Booking (Terminal 3):**
 ```bash
 # For Tenant-123
-curl -X POST https://localhost:7046/api/bookings/create \
+curl -X POST https://localhost:7046/api/bookings \
   -H "X-Tenant-Id: 550e8400-e29b-41d4-a716-446655440000" \
-  -H "Content-Type: application/json" \
-  -d '{
+  -H "Idempotency-Key: booking-001" \
+  -H "Content-Type: application/json"
     "resourceId": "770e8400-e29b-41d4-a716-446655440000",
     "customerEmail": "user@example.com",
     "startUtc": "2024-01-20T14:00:00Z",

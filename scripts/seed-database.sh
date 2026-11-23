@@ -24,7 +24,7 @@ INSERT INTO resources (id, tenant_id, name, resource_type, capacity, buffer_minu
 VALUES ('a5d2e2a9-8b2e-3c7e-7b7b-2d3e7b7b2d3e'::uuid, 'b6e3f3b0-9c3f-4d8f-8c8c-3e4f8c8c3e4f'::uuid, 'Test Resource', 'Room', 1, 0, true)
 ON CONFLICT (id) DO NOTHING;
 
-INSERT INTO availability_schedules (id, tenant_id, resource_id, day_of_week, start_time, end_time)
+INSERT INTO availability_schedules (id, tenant_id, resource_id, day_of_week, start_local_time, end_local_time)
 VALUES 
   (gen_random_uuid(), 'b6e3f3b0-9c3f-4d8f-8c8c-3e4f8c8c3e4f'::uuid, 'a5d2e2a9-8b2e-3c7e-7b7b-2d3e7b7b2d3e'::uuid, 1, '09:00', '17:00'),
   (gen_random_uuid(), 'b6e3f3b0-9c3f-4d8f-8c8c-3e4f8c8c3e4f'::uuid, 'a5d2e2a9-8b2e-3c7e-7b7b-2d3e7b7b2d3e'::uuid, 2, '09:00', '17:00'),

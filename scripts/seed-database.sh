@@ -42,7 +42,7 @@ SELECT 'Booking' as entity, COUNT(*) FROM bookings;
 SELECT 'Outbox Message' as entity, COUNT(*) FROM outbox_messages;
 SQLEOF
 
-echo "$SEED_SQL" | PGPASSWORD=postgres psql -h localhost -U postgres -d bookingdb 2>&1 || echo "Direct psql failed, trying alternative..."
+echo "$SEED_SQL" | PGPASSWORD="${PGPASSWORD:-postgres}" psql -v ON_ERROR_STOP=1 -h localhost -U postgres -d bookingdb
 
 echo ""
 echo "✓ Seed script completed"

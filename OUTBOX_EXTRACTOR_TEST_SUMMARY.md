@@ -115,16 +115,11 @@ var broadcastMessage = new OutboxBroadcastMessage(
 
 ### 2. **SignalR BookingsHub** (Routing)
 
-```csharp
-if (!string.IsNullOrWhiteSpace(broadcastMessage.TenantId))
-{
-    await Clients.Group($"tenant:{broadcastMessage.TenantId}")
-        .SendAsync("ReceiveBookingUpdate", broadcastMessage);
-}
-else
-{
-    await Clients.All.SendAsync("ReceiveBookingUpdate", broadcastMessage);
-}
+if (string.IsNullOrWhiteSpace(broadcastMessage.TenantId))
+    throw new InvalidOperationException("TenantId is required for BookingUpdated broadcasts.");
+
+await Clients.Group($"tenant:{broadcastMessage.TenantId}")
+    .SendAsync("ReceiveBookingUpdate", broadcastMessage);
 ```
 
 ---

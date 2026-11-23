@@ -1,4 +1,4 @@
 {
-  "BookingEngine.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/lmgorewit\/Documents\/Documents - Lisa M Gorewit-Decker MacBook Pro\/lisagorewitdecker\/BookingEngine\/src\/BookingEngine.Api",
-  "BookingEngine.ServiceDefaults, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/lmgorewit\/Documents\/Documents - Lisa M Gorewit-Decker MacBook Pro\/lisagorewitdecker\/BookingEngine\/src\/BookingEngine.ServiceDefaults"
+  "BookingEngine.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "src/BookingEngine.Api",
+  "BookingEngine.ServiceDefaults, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "src/BookingEngine.ServiceDefaults"
 }

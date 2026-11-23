@@ -39,7 +39,7 @@ curl -k https://localhost:7046/health
 
 ### 2. Services Running (15 seconds)
 ```bash
-ps aux | grep "BookingEngine\.(Api|Worker)" | grep -v grep
+ps aux | grep -E "BookingEngine\.(Api|Worker)" | grep -v grep
 # Expected: Both API and Worker processes listed
 ```
 

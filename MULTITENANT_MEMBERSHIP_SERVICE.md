@@ -113,11 +113,7 @@ async function switchWorkspace(newTenantId: string) {
     // Leave old tenant group
     await connection.invoke("LeaveTenantGroup", currentTenantId);
     
-    // Join new tenant group (with optional dynamic verification)
-    try {
-        await connection.invoke("JoinTenantGroup", newTenantId, {
-            verifyWithDatabase: true  // Enable if membership can change
-        });
+        await connection.invoke("JoinTenantGroup", newTenantId, true);
         currentTenantId = newTenantId;
     } catch (err) {
         console.error("Failed to switch tenant:", err);

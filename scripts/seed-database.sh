@@ -16,8 +16,8 @@ echo "Attempting to seed via database connection..."
 # Create the seed script content
 read -r -d '' SEED_SQL << 'SQLEOF' || true
 BEGIN;
-INSERT INTO tenants (id, slug, name, timezone)
-VALUES ('b6e3f3b0-9c3f-4d8f-8c8c-3e4f8c8c3e4f'::uuid, 'test-tenant', 'Test Tenant', 'UTC')
+INSERT INTO tenants (id, slug, name, iana_timezone, created_at_utc)
+VALUES ('b6e3f3b0-9c3f-4d8f-8c8c-3e4f8c8c3e4f'::uuid, 'test-tenant', 'Test Tenant', 'UTC', NOW())
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO resources (id, tenant_id, name, type)

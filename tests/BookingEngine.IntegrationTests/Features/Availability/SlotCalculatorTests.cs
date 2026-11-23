@@ -201,7 +201,7 @@ internal sealed class TestBookingBuilder
             _idempotencyKey,
             _startUtc,
             _endUtc,
-            DateTime.UtcNow);
+            new DateTime(2026, 11, 23, 8, 0, 0, DateTimeKind.Utc)
     }
 }
 

@@ -287,8 +287,8 @@ var tenantId = Context.User?.FindFirst("tenant_id")?.Value;
 ## 📞 Quick Links
 
 **Code Files:**
-- BookingsHub: [`src/BookingEngine.Api/Hubs/BookingsHub.cs`](/Users/lmgorewit/Documents/Documents\ -\ Lisa\ M\ Gorewit-Decker\ MacBook\ Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.Api/Hubs/BookingsHub.cs)
-- Worker: [`src/BookingEngine.Worker/OutboxProcessorWorker.cs`](/Users/lmgorewit/Documents/Documents\ -\ Lisa\ M\ Gorewit-Decker\ MacBook\ Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.Worker/OutboxProcessorWorker.cs)
+- BookingsHub: [`src/BookingEngine.Api/Hubs/BookingsHub.cs`](./src/BookingEngine.Api/Hubs/BookingsHub.cs)
+- Worker: [`src/BookingEngine.Worker/OutboxProcessorWorker.cs`](./src/BookingEngine.Worker/OutboxProcessorWorker.cs)
 
 **Documentation:**
 - Verification: [`TENANT_SCOPED_SIGNALR_VERIFICATION.md`](TENANT_SCOPED_SIGNALR_VERIFICATION.md)

@@ -4,13 +4,13 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages/" />
+    <SourceRoot Include="/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)/microsoft.extensions.configuration.usersecrets/10.0.14/buildTransitive/net8.0/Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)/microsoft.extensions.configuration.usersecrets/10.0.14/buildTransitive/net8.0/Microsoft.Extensions.Configuration.UserSecrets.props')" />
@@ -18,9 +18,9 @@
     <Import Project="$(NuGetPackageRoot)/aspire.dashboard.sdk.linux-x64/13.6.5/buildTransitive/Aspire.Dashboard.Sdk.linux-x64.props" Condition="Exists('$(NuGetPackageRoot)/aspire.dashboard.sdk.linux-x64/13.6.5/buildTransitive/Aspire.Dashboard.Sdk.linux-x64.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages/grpc.tools/2.83.0</PkgGrpc_Tools>
-    <PkgAspire_Hosting_Orchestration_linux-x64 Condition=" '$(PkgAspire_Hosting_Orchestration_linux-x64)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages/aspire.hosting.orchestration.linux-x64/13.6.5</PkgAspire_Hosting_Orchestration_linux-x64>
-    <PkgAspire_Hosting_AppHost Condition=" '$(PkgAspire_Hosting_AppHost)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages/aspire.hosting.apphost/13.6.5</PkgAspire_Hosting_AppHost>
-    <PkgAspire_Dashboard_Sdk_linux-x64 Condition=" '$(PkgAspire_Dashboard_Sdk_linux-x64)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages/aspire.dashboard.sdk.linux-x64/13.6.5</PkgAspire_Dashboard_Sdk_linux-x64>
+    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages/grpc.tools/2.83.0</PkgGrpc_Tools>
+    <PkgAspire_Hosting_Orchestration_linux-x64 Condition=" '$(PkgAspire_Hosting_Orchestration_linux-x64)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages/aspire.hosting.orchestration.linux-x64/13.6.5</PkgAspire_Hosting_Orchestration_linux-x64>
+    <PkgAspire_Hosting_AppHost Condition=" '$(PkgAspire_Hosting_AppHost)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages/aspire.hosting.apphost/13.6.5</PkgAspire_Hosting_AppHost>
+    <PkgAspire_Dashboard_Sdk_linux-x64 Condition=" '$(PkgAspire_Dashboard_Sdk_linux-x64)' == '' ">/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages/aspire.dashboard.sdk.linux-x64/13.6.5</PkgAspire_Dashboard_Sdk_linux-x64>
   </PropertyGroup>
 </Project>

@@ -36,6 +36,12 @@ public sealed class GlobalExceptionHandler(
                 requestMethod,
                 requestPath,
                 SanitizeLogValue(exception.Message));
+                "Handled domain/conflict exception ({ErrorCode}) on {Method}",
+                errorCode ?? "none",
+                httpContext.Request.Method);
+                httpContext.Request.Method,
+                httpContext.Request.Path,
+                exception.Message.ReplaceLineEndings(" "));
         }
 
         httpContext.Response.StatusCode = statusCode;

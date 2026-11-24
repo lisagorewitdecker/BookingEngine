@@ -33,7 +33,7 @@ public sealed class GlobalExceptionHandler(
                 errorCode ?? "none",
                 httpContext.Request.Method,
                 httpContext.Request.Path,
-                exception.Message);
+                exception.Message.ReplaceLineEndings(" "));
         }
 
         httpContext.Response.StatusCode = statusCode;

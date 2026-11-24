@@ -29,8 +29,9 @@ public sealed class GlobalExceptionHandler(
         else
         {
             logger.LogWarning(
-                "Handled domain/conflict exception ({ErrorCode}) on {Method} {Path}: {Message}",
+                "Handled domain/conflict exception ({ErrorCode}) on {Method}",
                 errorCode ?? "none",
+                httpContext.Request.Method);
                 httpContext.Request.Method,
                 httpContext.Request.Path,
                 exception.Message.ReplaceLineEndings(" "));

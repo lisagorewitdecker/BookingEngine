@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/bin/BookingEngine.Api.csproj": {}
+  },
+  "projects": {
+    "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/bin/BookingEngine.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/bin/BookingEngine.Api.csproj",
+        "projectName": "BookingEngine.Api",
+        "projectPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/bin/BookingEngine.Api.csproj",
+        "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages",
+        "outputPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/bin/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net11.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net11.0": {
+            "framework": "net11.0",
+            "targetAlias": "net11.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "11.0.100"
+      },
+      "frameworks": {
+        "net11.0": {
+          "framework": "net11.0",
+          "targetAlias": "net11.0",
+          "dependencies": {
+            "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[13.*, )"
+            },
+            "EFCore.NamingConventions": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.*, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[11.0.*, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[11.0.0, 11.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[11.0.0, 11.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[11.0.0, 11.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/11.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

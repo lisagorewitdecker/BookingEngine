@@ -10,7 +10,7 @@
         "projectUniqueName": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/BookingEngine.Api.csproj",
         "projectName": "BookingEngine.Api",
         "projectPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/BookingEngine.Api.csproj",
-        "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages",
+        "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages",
         "outputPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -120,7 +120,7 @@
         "projectUniqueName": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.ServiceDefaults/BookingEngine.ServiceDefaults.csproj",
         "projectName": "BookingEngine.ServiceDefaults",
         "projectPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.ServiceDefaults/BookingEngine.ServiceDefaults.csproj",
-        "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages",
+        "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages",
         "outputPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.ServiceDefaults/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -224,7 +224,7 @@
         "projectUniqueName": "/home/runner/work/BookingEngine/BookingEngine/tests/BookingEngine.IntegrationTests/BookingEngine.IntegrationTests.csproj",
         "projectName": "BookingEngine.IntegrationTests",
         "projectPath": "/home/runner/work/BookingEngine/BookingEngine/tests/BookingEngine.IntegrationTests/BookingEngine.IntegrationTests.csproj",
-        "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages",
+        "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages",
         "outputPath": "/home/runner/work/BookingEngine/BookingEngine/tests/BookingEngine.IntegrationTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [

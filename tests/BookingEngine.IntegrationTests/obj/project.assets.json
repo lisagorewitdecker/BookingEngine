@@ -5037,7 +5037,7 @@
     ]
   },
   "packageFolders": {
-    "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages": {}
+    "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5045,7 +5045,7 @@
       "projectUniqueName": "/home/runner/work/BookingEngine/BookingEngine/tests/BookingEngine.IntegrationTests/BookingEngine.IntegrationTests.csproj",
       "projectName": "BookingEngine.IntegrationTests",
       "projectPath": "/home/runner/work/BookingEngine/BookingEngine/tests/BookingEngine.IntegrationTests/BookingEngine.IntegrationTests.csproj",
-      "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages",
+      "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages",
       "outputPath": "/home/runner/work/BookingEngine/BookingEngine/tests/BookingEngine.IntegrationTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [

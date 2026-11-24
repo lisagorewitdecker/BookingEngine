@@ -2039,7 +2039,7 @@
     ]
   },
   "packageFolders": {
-    "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages": {}
+    "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2047,7 +2047,7 @@
       "projectUniqueName": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.ServiceDefaults/BookingEngine.ServiceDefaults.csproj",
       "projectName": "BookingEngine.ServiceDefaults",
       "projectPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.ServiceDefaults/BookingEngine.ServiceDefaults.csproj",
-      "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/packages",
+      "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages",
       "outputPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.ServiceDefaults/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [

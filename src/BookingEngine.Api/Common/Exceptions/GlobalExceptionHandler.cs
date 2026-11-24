@@ -17,23 +17,25 @@ public sealed class GlobalExceptionHandler(
         CancellationToken cancellationToken)
     {
         var (statusCode, title, detail, errorCode) = MapException(exception);
+        var requestMethod = SanitizeLogValue(httpContext.Request.Method);
+        var requestPath = SanitizeLogValue(httpContext.Request.Path.Value ?? string.Empty);
 
         if (statusCode >= StatusCodes.Status500InternalServerError)
         {
             logger.LogError(
-                exception,
-                "Unhandled exception occurred while processing {Method} {Path}",
-                httpContext.Request.Method,
-                httpContext.Request.Path);
+                "Unhandled exception occurred while processing {Method} {Path}: {Exception}",
+                requestMethod,
+                requestPath,
+                SanitizeLogValue(exception.ToString()));
         }
         else
         {
             logger.LogWarning(
                 "Handled domain/conflict exception ({ErrorCode}) on {Method} {Path}: {Message}",
-                errorCode ?? "none",
-                httpContext.Request.Method,
-                httpContext.Request.Path,
-                exception.Message);
+                SanitizeLogValue(errorCode ?? "none"),
+                requestMethod,
+                requestPath,
+                SanitizeLogValue(exception.Message));
         }
 
         httpContext.Response.StatusCode = statusCode;
@@ -69,6 +71,9 @@ public sealed class GlobalExceptionHandler(
             ProblemDetails = problemDetails
         });
     }
+
+    private static string SanitizeLogValue(string value) =>
+        value.Replace('\r', ' ').Replace('\n', ' ');
 
     private static (int StatusCode, string Title, string Detail, string? ErrorCode) MapException(Exception exception)
     {

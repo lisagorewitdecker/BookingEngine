@@ -2,15 +2,15 @@
   "version": 4,
   "targets": {
     "net10.0": {
-      "Aspire.Dashboard.Sdk.osx-arm64/13.6.5": {
+      "Aspire.Dashboard.Sdk.linux-x64/13.6.5": {
         "type": "package",
         "build": {
-          "buildTransitive/Aspire.Dashboard.Sdk.osx-arm64.props": {},
-          "buildTransitive/Aspire.Dashboard.Sdk.osx-arm64.targets": {}
+          "buildTransitive/Aspire.Dashboard.Sdk.linux-x64.props": {},
+          "buildTransitive/Aspire.Dashboard.Sdk.linux-x64.targets": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/Aspire.Dashboard.Sdk.osx-arm64.props": {},
-          "buildMultiTargeting/Aspire.Dashboard.Sdk.osx-arm64.targets": {}
+          "buildMultiTargeting/Aspire.Dashboard.Sdk.linux-x64.props": {},
+          "buildMultiTargeting/Aspire.Dashboard.Sdk.linux-x64.targets": {}
         }
       },
       "Aspire.Hosting/13.6.5": {
@@ -156,13 +156,13 @@
           "buildMultiTargeting/Aspire.Hosting.AppHost.targets": {}
         }
       },
-      "Aspire.Hosting.Orchestration.osx-arm64/13.6.5": {
+      "Aspire.Hosting.Orchestration.linux-x64/13.6.5": {
         "type": "package",
         "build": {
-          "buildTransitive/Aspire.Hosting.Orchestration.osx-arm64.targets": {}
+          "buildTransitive/Aspire.Hosting.Orchestration.linux-x64.targets": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/Aspire.Hosting.Orchestration.osx-arm64.targets": {}
+          "buildMultiTargeting/Aspire.Hosting.Orchestration.linux-x64.targets": {}
         }
       },
       "Aspire.Hosting.PostgreSQL/13.6.5": {
@@ -1713,31 +1713,31 @@
     }
   },
   "libraries": {
-    "Aspire.Dashboard.Sdk.osx-arm64/13.6.5": {
-      "sha512": "BgU8bn8D/Sac+UalJXshFuhR4BiLZTe1Av1izghRCEWdL9QnsjO8zI/jM0mymg7Nt2FY2Y7nzoE/mLSJXzt6+A==",
+    "Aspire.Dashboard.Sdk.linux-x64/13.6.5": {
+      "sha512": "5AbO2pEYAqkC757VKj/89ie16jF3K8tpQHBYlNJKZBVLQTUQVd951/Q3VnU1x3UkXVyxb7zR7el/iRtQMyJXEw==",
       "type": "package",
-      "path": "aspire.dashboard.sdk.osx-arm64/13.6.5",
+      "path": "aspire.dashboard.sdk.linux-x64/13.6.5",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "aspire.dashboard.sdk.osx-arm64.13.6.5.nupkg.sha512",
-        "aspire.dashboard.sdk.osx-arm64.nuspec",
-        "build/Aspire.Dashboard.Sdk.osx-arm64.props",
-        "build/Aspire.Dashboard.Sdk.osx-arm64.targets",
-        "buildMultiTargeting/Aspire.Dashboard.Sdk.osx-arm64.props",
-        "buildMultiTargeting/Aspire.Dashboard.Sdk.osx-arm64.targets",
-        "buildTransitive/Aspire.Dashboard.Sdk.osx-arm64.props",
-        "buildTransitive/Aspire.Dashboard.Sdk.osx-arm64.targets",
+        "aspire.dashboard.sdk.linux-x64.13.6.5.nupkg.sha512",
+        "aspire.dashboard.sdk.linux-x64.nuspec",
+        "build/Aspire.Dashboard.Sdk.linux-x64.props",
+        "build/Aspire.Dashboard.Sdk.linux-x64.targets",
+        "buildMultiTargeting/Aspire.Dashboard.Sdk.linux-x64.props",
+        "buildMultiTargeting/Aspire.Dashboard.Sdk.linux-x64.targets",
+        "buildTransitive/Aspire.Dashboard.Sdk.linux-x64.props",
+        "buildTransitive/Aspire.Dashboard.Sdk.linux-x64.targets",
         "data/UnixFilePermissions.xml",
         "tools/Aspire.Dashboard",
         "tools/Aspire.Dashboard.staticwebassets.endpoints.json",
         "tools/appsettings.Development.json",
         "tools/appsettings.json",
-        "tools/libe_sqlite3.dylib",
-        "tools/libhex1binterop.dylib",
+        "tools/libe_sqlite3.so",
+        "tools/libhex1binterop.so",
         "tools/wwwroot/Aspire.Dashboard.modules.json",
         "tools/wwwroot/Aspire.Dashboard.modules.json.br",
         "tools/wwwroot/Aspire.Dashboard.modules.json.gz",
@@ -2270,26 +2270,26 @@
         "tools/net8.0/Aspire.Hosting.Tasks.dll"
       ]
     },
-    "Aspire.Hosting.Orchestration.osx-arm64/13.6.5": {
-      "sha512": "k4M0Nz2lsqOft36GtjtEEZ5k7Itwd0pX5HTaFVEa9ig7K5WEH+Yzzjz4GCwBZNgwzSgemLTdP47GvQEh2nZtgw==",
+    "Aspire.Hosting.Orchestration.linux-x64/13.6.5": {
+      "sha512": "sAQXnHRMarxvm05YfpdNhRuWm+CZTJvnrU+vOobgQaUCGNCpsfYtNPSrjhIuoo9sJ3P5tAqE9cEtfSUVKvhAIw==",
       "type": "package",
-      "path": "aspire.hosting.orchestration.osx-arm64/13.6.5",
+      "path": "aspire.hosting.orchestration.linux-x64/13.6.5",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "aspire.hosting.orchestration.osx-arm64.13.6.5.nupkg.sha512",
-        "aspire.hosting.orchestration.osx-arm64.nuspec",
-        "build/Aspire.Hosting.Orchestration.osx-arm64.targets",
-        "buildMultiTargeting/Aspire.Hosting.Orchestration.osx-arm64.targets",
-        "buildTransitive/Aspire.Hosting.Orchestration.osx-arm64.targets",
+        "aspire.hosting.orchestration.linux-x64.13.6.5.nupkg.sha512",
+        "aspire.hosting.orchestration.linux-x64.nuspec",
+        "build/Aspire.Hosting.Orchestration.linux-x64.targets",
+        "buildMultiTargeting/Aspire.Hosting.Orchestration.linux-x64.targets",
+        "buildTransitive/Aspire.Hosting.Orchestration.linux-x64.targets",
         "data/UnixFilePermissions.xml",
         "tools/LICENSE",
         "tools/NOTICE",
         "tools/_manifest/comparison-result.json",
-        "tools/_manifest/spdx_2.2/ESRPClientLogs1020031254335.json",
+        "tools/_manifest/spdx_2.2/ESRPClientLogs1020011048677.json",
         "tools/_manifest/spdx_2.2/bsi.cose",
         "tools/_manifest/spdx_2.2/bsi.json",
         "tools/_manifest/spdx_2.2/manifest.cat",
@@ -4450,26 +4450,26 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Aspire.Dashboard.Sdk.osx-arm64 >= 13.*",
+      "Aspire.Dashboard.Sdk.linux-x64 >= 13.*",
       "Aspire.Hosting.AppHost >= 13.*",
-      "Aspire.Hosting.Orchestration.osx-arm64 >= 13.*",
+      "Aspire.Hosting.Orchestration.linux-x64 >= 13.*",
       "Aspire.Hosting.PostgreSQL >= 13.*"
     ]
   },
   "packageFolders": {
-    "/Users/lmgorewit/.nuget/packages/": {}
+    "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.AppHost/BookingEngine.AppHost.csproj",
+      "projectUniqueName": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.AppHost/BookingEngine.AppHost.csproj",
       "projectName": "BookingEngine.AppHost",
-      "projectPath": "/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.AppHost/BookingEngine.AppHost.csproj",
-      "packagesPath": "/Users/lmgorewit/.nuget/packages/",
-      "outputPath": "/Users/lmgorewit/Documents/Documents - Lisa M Gorewit-Decker MacBook Pro/lisagorewitdecker/BookingEngine/src/BookingEngine.AppHost/obj/",
+      "projectPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.AppHost/BookingEngine.AppHost.csproj",
+      "packagesPath": "/tmp/codeql-scratch-c811130638e6e4d3/dbs/csharp/working/overlay/packages",
+      "outputPath": "/home/runner/work/BookingEngine/BookingEngine/src/BookingEngine.AppHost/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lmgorewit/.nuget/NuGet/NuGet.Config"
+        "/home/runner/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -4501,7 +4501,7 @@
         "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
-          "Aspire.Dashboard.Sdk.osx-arm64": {
+          "Aspire.Dashboard.Sdk.linux-x64": {
             "target": "Package",
             "version": "[13.*, )",
             "autoReferenced": true
@@ -4510,7 +4510,7 @@
             "target": "Package",
             "version": "[13.*, )"
           },
-          "Aspire.Hosting.Orchestration.osx-arm64": {
+          "Aspire.Hosting.Orchestration.linux-x64": {
             "target": "Package",
             "version": "[13.*, )",
             "autoReferenced": true
@@ -4531,12 +4531,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[10.0.15, 10.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[10.0.15, 10.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[10.0.15, 10.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/11.0.100/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/11.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

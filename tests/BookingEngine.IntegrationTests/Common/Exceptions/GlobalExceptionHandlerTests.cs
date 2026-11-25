@@ -1,5 +1,6 @@
 using BookingEngine.Api.Common.Domain;
 using BookingEngine.Api.Common.Exceptions;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -9,6 +10,19 @@ namespace BookingEngine.IntegrationTests.Common.Exceptions;
 public sealed class GlobalExceptionHandlerTests
 {
     [Fact]
+    public async Task TryHandleAsync_ReplacesLineBreaksInWarningMessage()
+    {
+        var logger = new CapturingLogger();
+        var handler = new GlobalExceptionHandler(new NoOpProblemDetailsService(), logger);
+        var context = new DefaultHttpContext();
+        var exception = new DomainException("request.invalid", "Invalid input\r\nforged log entry");
+
+        await handler.TryHandleAsync(context, exception, CancellationToken.None);
+
+        Assert.Single(logger.Warnings);
+        Assert.Contains("Invalid input  forged log entry", logger.Warnings[0]);
+        Assert.DoesNotContain('\r', logger.Warnings[0]);
+        Assert.DoesNotContain('\n', logger.Warnings[0]);
     public async Task TryHandleAsync_WhenDomainExceptionMessageContainsLineBreaks_LogsSingleLine()
     {
         var logger = new CapturingLogger<GlobalExceptionHandler>();
@@ -27,6 +41,12 @@ public sealed class GlobalExceptionHandlerTests
 
     private sealed class NoOpProblemDetailsService : IProblemDetailsService
     {
+        public ValueTask<bool> TryWriteAsync(ProblemDetailsContext context) => ValueTask.FromResult(true);
+    }
+
+    private sealed class CapturingLogger : ILogger<GlobalExceptionHandler>
+    {
+        public List<string> Warnings { get; } = [];
         public ValueTask WriteAsync(ProblemDetailsContext context) => ValueTask.CompletedTask;
 
         public ValueTask<bool> TryWriteAsync(ProblemDetailsContext context) => ValueTask.FromResult(false);
@@ -47,6 +67,10 @@ public sealed class GlobalExceptionHandlerTests
             Exception? exception,
             Func<TState, Exception?, string> formatter)
         {
+            if (logLevel == LogLevel.Warning)
+            {
+                Warnings.Add(formatter(state, exception));
+            }
             Messages.Add(formatter(state, exception));
         }
     }

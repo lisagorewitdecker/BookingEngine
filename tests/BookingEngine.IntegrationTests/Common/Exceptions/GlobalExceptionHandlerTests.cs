@@ -23,6 +23,20 @@ public sealed class GlobalExceptionHandlerTests
         Assert.Contains("Invalid input  forged log entry", logger.Warnings[0]);
         Assert.DoesNotContain('\r', logger.Warnings[0]);
         Assert.DoesNotContain('\n', logger.Warnings[0]);
+    public async Task TryHandleAsync_WhenDomainExceptionMessageContainsLineBreaks_LogsSingleLine()
+    {
+        var logger = new CapturingLogger<GlobalExceptionHandler>();
+        var handler = new GlobalExceptionHandler(new NoOpProblemDetailsService(), logger);
+
+        await handler.TryHandleAsync(
+            new DefaultHttpContext(),
+            new DomainException("booking.test", "first line\r\nforged entry"),
+            CancellationToken.None);
+
+        string logMessage = Assert.Single(logger.Messages);
+        Assert.DoesNotContain('\r', logMessage);
+        Assert.DoesNotContain('\n', logMessage);
+        Assert.Contains("first line forged entry", logMessage);
     }
 
     private sealed class NoOpProblemDetailsService : IProblemDetailsService
@@ -33,6 +47,14 @@ public sealed class GlobalExceptionHandlerTests
     private sealed class CapturingLogger : ILogger<GlobalExceptionHandler>
     {
         public List<string> Warnings { get; } = [];
+        public ValueTask WriteAsync(ProblemDetailsContext context) => ValueTask.CompletedTask;
+
+        public ValueTask<bool> TryWriteAsync(ProblemDetailsContext context) => ValueTask.FromResult(false);
+    }
+
+    private sealed class CapturingLogger<T> : ILogger<T>
+    {
+        public List<string> Messages { get; } = [];
 
         public IDisposable? BeginScope<TState>(TState state) where TState : notnull => null;
 
@@ -49,6 +71,7 @@ public sealed class GlobalExceptionHandlerTests
             {
                 Warnings.Add(formatter(state, exception));
             }
+            Messages.Add(formatter(state, exception));
         }
     }
 }

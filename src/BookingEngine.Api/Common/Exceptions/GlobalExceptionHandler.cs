@@ -30,13 +30,8 @@ public sealed class GlobalExceptionHandler(
         }
         else
         {
-            var safeMessage = exception.Message.Replace('\r', ' ').Replace('\n', ' ');
             logger.LogWarning(
                 "Handled domain/conflict exception ({ErrorCode}) on {Method} {Path}: {Message}",
-                errorCode ?? "none",
-                httpContext.Request.Method,
-                httpContext.Request.Path,
-                safeMessage);
                 SanitizeLogValue(errorCode ?? "none"),
                 requestMethod,
                 requestPath,
